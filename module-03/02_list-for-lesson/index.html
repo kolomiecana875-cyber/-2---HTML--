@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--! Маркований список або не нумерований -->
+    <!-- Властивість list-style-type дозволяє встановити тип маркера.
+
+    Маркований список:
+      - circle - маркер у вигляді пустого кола.
+      - disc   - маркер у вигляді зафарбованого кола.
+      - square - маркер у вигляді квадрата. -->
+    <hr />
+    <h1>Види списків у WEB</h1>
+    <!-- ------------------------------- -->
+    <h2>Маркований список</h2>
+
+    <ol class="student">
+      <li>Іванова Валерія Олегівна</li>
+      <li>Замега Владислав Іванович</li>
+      <li value="5">Юрчак Владислав Сергійович</li>
+      <li>Мацідон Маріанна Сергіївна</li>
+    </ol>
+
+    <ul class="list-disc">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+
+    <ul class="list-circle">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+
+    <ul class="list-square">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+
+    <ul class="list-none">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+    <hr />
+    <!-- ------------------------------- -->
+
+    <!--! Нумерований список -->
+    <!-- 
+    Властивість list-style-type дозволяє встановити тип нумерації.
+
+    Нумерований список:
+      - decimal         - арабські цифри.
+      - decimal-leading-zero - арабські цифри з ведучим нулем.
+      - lower-alpha     - малі літери латинського алфавіту.
+      - lower-roman     - малі римські цифри.
+      - upper-alpha     - великі літери латинського алфавіту.
+      - upper-roman     - великі римські цифри. 
+      - none            - без нумерації.
+      - armenian        - вірменські цифри.
+      - georgian        - грузинські цифри.
+      - lower-latin     - малі літери латинського алфавіту.
+      - upper-latin     - великі літери латинського алфавіту.
+      - hebrew          - єврейські цифри.
+      - cjk-ideographic - китайські ієрогліфи.
+    -->
+    <h2>Нумерований список</h2>
+    <ol class="student2">
+      <li>
+        Іванова Валерія Олегівна
+        <ul>
+          <li>фізика</li>
+          <li>
+            математика
+            <ol>
+              <li>алгебра</li>
+              <li>геометрія</li>
+            </ol>
+          </li>
+          <li>хімія</li>
+        </ul>
+      </li>
+      <li>Замега Владислав Іванович</li>
+      <li value="5">Юрчак Владислав Сергійович</li>
+      <li>Мацідон Маріанна Сергіївна</li>
+    </ol>
+
+    <ol class="list-decimal">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-decimal-leading-zero">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-lower-alpha">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-upper-alpha">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-lower-roman">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-upper-roman">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-georgian">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-armenian">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-lower-latin">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-upper-latin">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-hebrew">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+
+    <ol class="list-cjk-ideographic">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+    <hr />
+    <!-- ------------------------------- -->
+    <!--! Списки зі змінними значеннями -->
+    <!-- 
+     * Властивість reversed встановлює зворотній порядок нумерації.
+     * Властивість start встановлює початкове значення нумерації.
+     * Властивість value встановлює значення нумерації. -->
+
+    <h2>Список зі змінними значеннями</h2>
+    <ol reversed>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+    <ol start="5">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ol>
+    <ol>
+      <li value="56">HTML</li>
+      <li>CSS</li>
+      <li value="100">JavaScript</li>
+      <li>React</li>
+    </ol>
+    <hr />
+    <!-- ------------------------------- -->
+
+    <h2>Вкладені списки</h2>
+    <ul>
+      <li>HTML</li>
+      <li>
+        CSS
+        <ul>
+          <li>Flexbox</li>
+          <li>Grid</li>
+        </ul>
+      </li>
+      <li>JavaScript</li>
+      <li>
+        React
+        <ul>
+          <li>React Router</li>
+          <li>Redux</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ol class="student">
+      <li>
+        Іванова Валерія Олегівна
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Angular</li>
+        </ul>
+      </li>
+      <li>
+        Замега Владислав Іванович
+        <ul>
+          <li>C++</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>PHP</li>
+        </ul>
+      </li>
+      <li value="5">
+        Юрчак Владислав Сергійович
+        <ul>
+          <li>
+            Photoshop
+            <ul>
+              <li>version 5</li>
+              <li>version 6</li>
+            </ul>
+          </li>
+          <li>Illustrator</li>
+          <li>After Effects</li>
+          <li>Figma</li>
+        </ul>
+      </li>
+      <li>
+        Мацідон Маріанна Сергіївна
+        <ul>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+          <li>After Effects</li>
+          <li>Figma</li>
+        </ul>
+      </li>
+    </ol>
+
+    <hr />
+    <!-- ------------------------------- -->
+
+    <!--! Список зі зображеннями -->
+    <!--
+    Властивість list-style-image дозволяє встановити зображення в якості маркера.
+    -->
+
+    <h2>Список зі зображеннями</h2>
+
+    <ul class="list-image-1">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+
+    <ul class="list-image-2">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+    </ul>
+
+    <ol class="student">
+      <li>Іванова Валерія Олегівна</li>
+      <li>Замега Владислав Іванович</li>
+      <li>Юрчак Владислав Сергійович</li>
+      <li>Мацідон Маріанна Сергіївна</li>
+    </ol>
+    <hr />
+    <!-- ------------------------------- -->
+
+    <!--! Список визначень -->
+
+    <h2>Список визначень</h2>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+      <dt>JavaScript</dt>
+      <dd>High-level, interpreted programming language</dd>
+      <dt>React</dt>
+      <dd>JavaScript library for building user interfaces</dd>
+    </dl>
+
+    <dl>
+      <dt>apple</dt>
+      <dd>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum eveniet
+        id minima qui ut consequuntur deserunt esse, ullam quod accusantium
+        dolorum aperiam quibusdam laborum aliquam debitis quia maxime eos in
+        mollitia aspernatur nulla. Dignissimos eos accusantium odio quae ab
+        rerum dolorum, animi voluptatum magnam porro quas quisquam voluptates
+        harum consectetur?
+      </dd>
+      <dt>banana</dt>
+      <dd>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat neque
+        quaerat quas, eos aperiam quisquam ad at dolorem debitis eius dolorum
+        iste nesciunt natus praesentium suscipit laudantium minus saepe illo
+        provident totam nulla architecto porro ipsam dignissimos? Vero illo,
+        quisquam nobis, suscipit rem consequuntur deserunt impedit eveniet
+        provident, blanditiis officia!
+      </dd>
+      <dt>cherry</dt>
+      <dd>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+        magnam, dolore praesentium ipsam non voluptate vero eveniet, quisquam
+        voluptas, itaque laudantium dicta esse dolorem iusto libero hic illo aut
+        corporis incidunt cum eos exercitationem? Animi exercitationem id minus
+        eligendi tempore! Eum ullam recusandae soluta cumque odio totam itaque
+        ea, nobis modi quam exercitationem facere optio iure velit in dolore
+        natus nihil cum nesciunt dolores, vel, obcaecati ipsa nostrum voluptas!
+        Eum.
+      </dd>
+      <dt>grape</dt>
+      <dd>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+        sunt, quaerat numquam provident, accusantium corrupti culpa, explicabo
+        hic et in necessitatibus omnis quis incidunt distinctio assumenda non
+        molestias est optio voluptatem. Consequatur distinctio quidem eos
+        expedita eius ratione officiis dolor illo provident cupiditate dolorem
+        delectus incidunt voluptates quod nam corrupti itaque odio nobis,
+        perspiciatis velit repellat! Officiis, expedita facilis. Similique,
+        ullam laborum dicta voluptates quod odit optio praesentium doloremque.
+        Consequatur, doloribus quas eum dignissimos, cupiditate delectus sequi
+        iste, dolorem dolor recusandae illum alias. Dolorem eos laudantium sit
+        vero reiciendis! Eius reprehenderit dolorem eveniet alias repudiandae,
+        aspernatur nobis nisi quaerat omnis.
+      </dd>
+    </dl>
+    <hr />
+    <!-- ------------------------------- -->
+
+    <!--! Властивість list-style-position -->
+
+    <h2>Властивість list-style-position</h2>
+
+    <ul class="list-inside">
+      <li>
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+        scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet
+        ac, aliquam sit amet justo nunc tempor, metus vel.
+      </li>
+      <li>
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+        scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet
+        ac, aliquam sit amet justo nunc tempor, metus vel.
+      </li>
+      <li>
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+        scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet
+        ac, aliquam sit amet justo nunc tempor, metus vel.
+      </li>
+    </ul>
+    <ul class="list-outside">
+      <li>
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+        scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet
+        ac, aliquam sit amet justo nunc tempor, metus vel.
+      </li>
+      <li>
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+        scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet
+        ac, aliquam sit amet justo nunc tempor, metus vel.
+      </li>
+      <li>
+        Tincidunt integer eu augue augue nunc elit dolor, luctus placerat
+        scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet
+        ac, aliquam sit amet justo nunc tempor, metus vel.
+      </li>
+    </ul>
+    <hr />
+    <!-- ------------------------------- -->
+
+    <!--! Псевдоелемент ::before, ::after -->
+
+    <h2>Псевдоелемент ::before, ::after</h2>
+
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat
+      sed neque debitis unde dolores quidem natus adipisci laudantium nobis,
+      harum nam aliquam fuga, aspernatur assumenda doloremque dolore a sint?
+      Fugit accusamus odio voluptatibus, vel iusto alias nostrum modi quos,
+      itaque labore quam sint. Labore quaerat officia alias adipisci minus
+      inventore ipsa obcaecati recusandae. Voluptas sint officiis pariatur quo
+      quisquam nisi recusandae consectetur enim quasi dolores, laudantium
+      facilis ullam? Sed ducimus, explicabo eius eos, necessitatibus mollitia
+      praesentium animi quae voluptates id quos iure itaque ad magnam deleniti,
+      facere reprehenderit. Non quisquam, deserunt laboriosam excepturi at eos
+      corrupti aut voluptates aspernatur.
+    </p>
+
+    <ul class="list-mark">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Vue</li>
+      <li>Angular</li>
+      <li>Node.js</li>
+      <li>Express.js</li>
+    </ul>
+  </body>
+</html>

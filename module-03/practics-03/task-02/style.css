@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+.container {
+  background-color: #f4f4f4;
+  padding: 24px 32px;
+  max-width: 550px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 16px;
+}
+
+/* Основний список (римські цифри I, II, III...) */
+.list {
+  list-style-type: upper-roman;
+  padding-left: 32px;
+}
+
+/* Другий рівень (арабські цифри 1, 2, 3...) */
+.sublist {
+  list-style-type: decimal;
+  padding-left: 24px;
+  margin-top: 4px;
+}
+
+/* Третій рівень (малі латинські літери a, b...) */
+.sub-sublist {
+  list-style-type: lower-alpha;
+  padding-left: 24px;
+  margin-top: 4px;
+}
+
+/* Стилізація маркерів (жирні та чорні) */
+li::marker {
+  font-weight: 700;
+  color: #111111;
+}
+
+/* Відступи між пунктами та колір тексту */
+li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+li span {
+  color: #5b638a;
+}

@@ -1,0 +1,164 @@
+/*! Маркований список або не нумерований */
+/* Властивість list-style-type дозволяє встановити тип маркера.
+
+Маркований список:
+  - circle - маркер у вигляді пустого кола.
+  - disc   - маркер у вигляді зафарбованого кола.
+  - square - маркер у вигляді квадрата. */
+
+.list-disc {
+  list-style-type: disc;
+}
+.list-circle {
+  list-style-type: circle;
+}
+.list-square {
+  list-style-type: square;
+}
+.list-none {
+  list-style-type: none;
+}
+
+/* ------------------------------------ */
+
+/*! Нумерований список */
+/* Властивість list-style-type дозволяє встановити тип нумерації.
+
+Нумерований список:
+  - decimal         - арабські цифри.
+  - decimal-leading-zero - арабські цифри з ведучим нулем.
+  - lower-alpha     - малі літери латинського алфавіту.
+  - lower-roman     - малі римські цифри.
+  - upper-alpha     - великі літери латинського алфавіту.
+  - upper-roman     - великі римські цифри. 
+  - none            - без нумерації.
+  - armenian        - вірменські цифри.
+  - georgian        - грузинські цифри.
+  - lower-latin     - малі літери латинського алфавіту.
+  - upper-latin     - великі літери латинського алфавіту.
+  - hebrew          - єврейські цифри.
+  - cjk-ideographic - китайські ієрогліфи.
+  */
+
+.student2 {
+  list-style-type: lower-alpha;
+}
+.list-decimal {
+  list-style-type: decimal;
+}
+.list-decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+.list-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.list-lower-roman {
+  list-style-type: lower-roman;
+}
+.list-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.list-upper-roman {
+  list-style-type: upper-roman;
+}
+.list-none {
+  list-style-type: none;
+}
+.list-armenian {
+  list-style-type: armenian;
+}
+.list-georgian {
+  list-style-type: georgian;
+}
+.list-lower-latin {
+  list-style-type: lower-latin;
+}
+.list-upper-latin {
+  list-style-type: upper-latin;
+}
+.list-hebrew {
+  list-style-type: hebrew;
+}
+.list-cjk-ideographic {
+  list-style-type: cjk-ideographic;
+}
+
+/* ------------------------------------ */
+
+/*! Властивість list-style-image */
+
+/* Властивість list-style-image дозволяє встановити зображення в якості маркера. */
+
+.list-image-1 {
+  list-style-image: url("img/apple.png");
+}
+.list-image-2 {
+  list-style-image: url("img/arr.gif");
+}
+
+.student {
+  list-style-type: "❤️";
+  list-style-image: url(./img/building.png);
+}
+
+/* ------------------------------------ */
+
+/*! Властивість list-style-position */
+
+/* Властивість list-style-position визначає розташування маркера відносно тексту.
+
+  - inside - маркер розташовується всередині блоку.
+  - outside - маркер розташовується поза блоком. */
+
+.list-inside {
+  list-style-position: inside;
+}
+.list-outside {
+  list-style-position: outside;
+}
+
+/* ------------------------------------ */
+
+/* Псевдоелемент ::before, ::after */
+
+/* 
+Псевдоелемент ::before дозволяє вставити вміст перед вмістом елемента.
+Псевдоелемент ::after дозволяє вставити вміст після вмісту елемента. 
+*/
+
+/* Приклад використання псевдоелементів ::before, ::after */
+
+/* Створюємо маркери для списку */
+
+.list-mark {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.list-mark li::before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: green;
+  margin-right: 15px;
+}
+
+/* ------------------------------------ */
+
+.text {
+  color: chocolate;
+}
+
+.text::before {
+  content: "start";
+  color: blue;
+  font-size: 28px;
+}
+
+.text::after {
+  content: "end";
+  color: green;
+  font-size: 28px;
+}
